@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <section class="hire-section">
+      <div class="container">
+        <h1>Hire Me</h1>
+        <p>
+          I'm available for freelance work, internships, or full-time software
+          development roles. Let's work together to bring your ideas to life!
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>What I Can Do</h2>
+      <ul>
+        <li>✅ Frontend Development (HTML, CSS, JavaScript, React)</li>
+        <li>✅ Backend Development (Node.js, Express, MongoDB)</li>
+        <li>✅ UI/UX Design (Wireframes, Prototypes, Figma)</li>
+        <li>✅ Responsive Web Design</li>
+        <li>✅ Portfolio & Landing Page Creation</li>
+      </ul>
+    </section>
+
+    <section class="hire-contact">
+      <h2>Interested in Working Together?</h2>
+      <p>Fill out the form and I’ll get back to you shortly.</p>
+      <form id="hire-form">
+        <input type="text" name="user_name" placeholder="Your Name" required />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Your Email"
+          required
+        />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea
+          name="message"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send Request</button>
+      </form>
+    </section>
+
+    <!-- ✅ Use only module version for EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module">
+      emailjs.init("SLpanI1VaWHCfuYE2"); // ✅ Replace with your real public key
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("hire-form");
+
+        if (form) {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            emailjs.sendForm("service_n9512xp", "template_dl41vep", form).then(
+              () => {
+                alert("✅ Message sent successfully!");
+                form.reset();
+              },
+              (error) => {
+                alert("❌ Failed to send message, try again.");
+                console.error("EmailJS Error:", error);
+              }
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+   
+  </head>
+  <body>
+    <div id="hamburger">&#9776;</div>
+
+    <div class="sidebar" id="sidebar">
+    <div class="logo">Salman</div>
+    <ul>
+      <li onclick="scrollToSection('home')"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+      <li onclick="scrollToSection('about-section')"><a href="#about"><i class="fas fa-user"></i>About</a></li>
+      <li onclick="scrollToSection('service-section')"><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+      <li onclick="scrollToSection('project-section')"><a href="#project"><i class="fas fa-briefcase"></i>Projects</a></li>
+      <li onclick="scrollToSection('Contact-section')"><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+</ul>
+
+  </div>
+  <!-- Main Content Wrapper -->
+<div class="main-content">
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-layout"> <!-- ✅ New wrapper for horizontal layout -->
+      <div class="text-content">
+        <h1>Hello, I'm <span>Salman I</span></h1>
+        <h2>I’m a <span id="changing-text">Software Developer</span></h2>
+        <p>
+          I am a Software Developer passionate about creating modern, responsive web applications using JavaScript and React.js. I enjoy solving problems, learning new technologies, and turning ideas into real-world applications.Currently focused on Full Stack Web Development using the MERN stack (MongoDB, Express.js, React.js, Node.js). I enjoy building responsive and dynamic web applications.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/limo_hub/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/salman-Imthiyas"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/@Imran885936406" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/salman-i-8b3bb3226"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <button class="btn"><a href="hire.html">Hire Me</a></button>
+      </div>
+
+      <div class="image-placeholder">
+        <img src="./assets/salman_img.png" alt="salman's Photo" />
+      </div>
+    </div>
+
+    <!-- Top Right Icons -->
+   <div class="top-right">
+  <i class="fas fa-cog" id="settings-icon"></i>
+
+  <!-- Color Options -->
+  <div id="color-options" style="display: none; flex-direction: row; gap: 10px;">
+    <div class="color-circle" data-color="#ff6200" style="background-color: #ff6200;"></div>
+    <div class="color-circle" data-color="#00bcd4" style="background-color: #00bcd4;"></div>
+    <div class="color-circle" data-color="#4caf50" style="background-color: #4caf50;"></div>
+    <div class="color-circle" data-color="#e91e63" style="background-color: #e91e63;"></div>
+    <div class="color-circle" data-color="#ffc107" style="background-color: #ffc107;"></div>
+  </div>
+
+  <!-- Dark/Light mode toggle -->
+  
+</div>
+  </section>
+</div>
+<div class="main-content">
+
+     
+    <!------------------------------------- About Section ------------------------------------------>
+    <section id="about-section">
+      <h1>About Me</h1>
+      <h2>I’m salman and I'm Software Developer</h2>
+      <p>
+        Results-driven Full Stack Developer with 7 years of enterprise experience in Quote-to-Cash and Operations at Hewlett Packard Enterprise, now transitioned into software development. Strong hands-on knowledge of JavaScript, frontend and backend development, and data-driven problem solving. Experienced in building end-of-the-end web applications using modern web technologies. Combines real-world business understanding with full stack development skills to deliver scalable, user-focused solutions. Highly motivated, fast learner, and confident in contributing as a Full Stack Developer in agile environments. 
+      </p>
+
+      <div class="info-grid">
+          <div class="info-item"><span>Birthday:</span>25 Nov 1996</div>
+          <div class="info-item"><span>Age:</span> 29</div>
+          <div class="info-item"><span>Website:</span> www.domain.com</div>
+          <div class="info-item"><span>Email:</span> salmanmech001@gmail.com</div>
+          <div class="info-item"><span>Degree:</span>Bachelor of Engineering</div>
+          <div class="info-item"><span>Phone:</span> +91 8608893307</div>
+          <div class="info-item"><span>City:</span> Chennai</div>
+          <div class="info-item"><span>Freelance:</span> Available</div>
+      </div>
+
+      <div class="skills">
+        <div class="skill-bar">
+          <span>HTML</span>
+          <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>CSS</span>
+          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        </div>
+         <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>React.js</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>Node.js</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>SQL & Mangodb</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 78%"></div>
+            </div>
+          </div>
+          <button class="btn1"><a href="assets/salman developer resume - jan 06 - 2026.docx" download class="download-btn">Download CV</a></button>
+      <div class="education-experience">
+          <div class="education">
+            <h2>Education</h2>
+            <div class="timeline-item">
+              <h3>Bachelor of Engineering in Mechanical Engineering</h3>
+              <p>2014 - 2018</p>
+              <p>
+               Gained strong skills in coding, software development, 
+               and building efficient solution with a passion for continious learning.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Higher Secondary Education - Science Stream</h3>
+              <p>2012 - 2014</p>
+              <p>
+                Focusing on Science and Mathematics,
+                developing analytical skills and an early interest in technology.
+              </p>
+            </div>
+          </div>
+          <div class="experience">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <div class="timeline-item">
+              <h3>Hewlett Packard Enterprises, Chennai</h3>
+              <p>2022 - 2026</p>
+              <ul>
+                <li>Lead end-to-end Quote-to-Cash operations for the Nimble Storage portfolio, supporting global regions (APJ, EMEA, AMS).</li>
+                <li>Act as a primary operations contact for sales teams, creating accurate quotes, validating pricing, configurations, and applicable discounts.</li>
+                <li>Perform quality checks (QC) to ensure compliance with contractual terms, pricing policies, and purchase orders prior to order booking.</li>
+                <li>Create and maintain sales order confirmations, billing details, and order acknowledgments.</li>
+                <li>Manage order booking and billing validation ensuring high accuracy and SLA adherence.</li>
+                <li>Use Salesforce CRM for quote tracking, case management, and order status updates.</li>
+                <li>Prepare and share daily and weekly productivity dashboards (open orders, backlog, SLA performance).</li>
+                <li>Collaborate with reporting teams to support Power BI dashboards for management visibility.</li>
+                <li>Coordinate with cross-functional stakeholders (Sales, Finance, Partners) to resolve escalations and ensure smooth deal closure.</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h3>Primus Global Pvt (clients of HPE)</h3>
+              <p>2021 - 2022</p>
+              <ul>
+                <li>Managed New Business Quotes (NBQ), Contract Amendments, and Renewal Quotes for global partners.</li>
+                <li>Created accurate sales quotes in SAP S/4 HANA, ensuring compliance with pricing and product configuration rules.</li>
+                <li>Shared completed quotes with partners and obtained confirmation for order booking (OB) requests</li>
+                <li>Coordinated with Sales and Finance teams to validate pricing, approvals, and billing readiness.</li>
+                <li>Issued booking confirmations and invoice copies to partners.</li>
+                <li>Maintained audit-ready documentation and improved turnaround time using Excel-based tracking.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    </div>
+    <section id="service-section">
+      <div id="services-section" class="section">
+            <h1>Services</h1>
+            <div class="services-grid">
+                <div class="service-card" onclick="goToContact('Web Development')">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 id="service-heading">Web Development</h3>
+                    <p>Buliding responsive and dynamic websites
+                       with modern teachnologies for  an engaging user experience.</p>
+                </div>
+                <div class="service-card" onclick="goToContact('Mobile Development')">
+                    <i class="fas fa-code"></i>
+                    <h3>Mobile Application</h3>
+                    <p>Creating efficient, user-friendly mobile 
+                      apps for andriod and ios platforms with smooth performance.</p>
+                </div>
+                <div class="service-card" onclick="goToContact('UI/UX Design')">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI UX Designing</h3>
+                    <p>Designing intuitive and visually appealing user 
+                      interfaces focused on delivering the best user experience.</p>
+                </div>
+                <div class="service-card" onclick="goToContact('Video Editing')">
+                    <i class="fas fa-code"></i>
+                    <h3>Video Editing</h3>
+                    <p>Creafting high-quality and creative video content with smooth 
+                      transitions and impactful storytelling.</p>
+                </div>
+                <div class="service-card" onclick="goToContact('Poster Making')">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Poster Making</h3>
+                    <p>Designing eye-catching posters and graphics that
+                       effectively communicate ideas and capture attention.</p>
+                </div>
+                <div class="service-card" onclick="goToContact('Digital Marketing')">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Providing result-driven digital marketing 
+                      solution to grow brand visibility and online engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="project-section">
+      <div id="services-section" class="section">
+            <h1>Projects</h1>
+            <div class="services-grid">
+                <div class="project-card">
+                    <img src="./assets/img1.jpg" alt="services" class="service-image">
+                    <div class="project-content">
+                      <h3 class="project-title">Calculator project</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/img2.jpg" alt="services" class="service-image">
+                    <div class="project-content">
+                      <h3 class="project-title">Cricket Game project</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/img3.jpg" alt="services" class="service-image">
+                    <div class="project-content">
+                      <h3 class="project-title">Application Form Project</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/img3.jpg" alt="services" class="service-image">
+                    <div class="project-content">
+                      <h3 class="project-title">Todo List project</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                   <img src="./assets/img5.jpg" alt="services" class="service-image">
+                   <div class="project-content">
+                      <h3 class="project-title">Car race animation project</h3>
+                   </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/img6.jpg" alt="services" class="service-image">
+                    <div class="project-content">
+                      <h3 class="project-title">Guvi website cteated project</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="Contact-section">
+      <div id="contact-section" class="section">
+            <h1>Contact Me</h1>
+            <h2>Have You Any Questions?</h2>
+            <p>I'm at your service</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Call Us On<br>+91 8608893307</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Office<br>5/A 5th cross Street permabur, Chennai</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email<br>salmanmech001@gamil.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <p>Website<br>mo-designer.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+  <h2>Send Me an Email</h2>
+  <p>I'm very responsive to messages</p>
+  <form id="contact-form">
+    <div class="form-grid">
+      <input type="text" name="user_name" placeholder="Name" required>
+      <input type="email" name="user_email" placeholder="Email" required>
+      <input type="text" name="subject" placeholder="Subject" class="subject">
+      <textarea name="message" placeholder="Message" required></textarea>
+    </div>
+    <div class="button-container">
+      <button class="btn2" type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+        </div>
+    </div>
+
+    </section>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- Your JS file should come LAST -->
+<script src="script.js"></script>
+  </body>
+</html>
+ 
